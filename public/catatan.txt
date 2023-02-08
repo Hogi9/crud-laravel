@@ -7,3 +7,9 @@ Video 3 :
     Contoh pembuatan route di folder routes/web.php;
     Contoh pembuatan statik file (di folder public);
     Cara mengambil data dari route ke view dengan echo;
+Video 4 :
+    Menampilkan data menggunakan blade templating dengan cara => {{ $data }}
+    @extend digunakan untuk mengambil view dari halaman lain
+    @yield berada didalam @extend yang digunakan untuk mengambil @section
+    @section berisi data yang berbeda beda dan ditutup dengan @endsection
+    Menampilkan data dummy dari route dengan @foreach
