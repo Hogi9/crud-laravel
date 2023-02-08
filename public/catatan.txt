@@ -13,3 +13,13 @@ Video 4 :
     @yield berada didalam @extend yang digunakan untuk mengambil @section
     @section berisi data yang berbeda beda dan ditutup dengan @endsection
     Menampilkan data dummy dari route dengan @foreach
+Video 5 :
+    Memindahkan data static di route ke model
+        php artisan make:model nama_model
+    Menggunakan fitur collection untuk mendapatkan data yang dibutuhkan di model, fungsi collection dapat dilihat di dokumentasi laravel
+    * Kalau self untuk properti/variabel static, kalau static untuk fungsi/method static
+        php artisan make:controller nama_controller
+    Contoh Penggunaan Collection : 
+        collect(array1); << deklarasi
+        array1->firstWhere('id',$id) << call function
+            ('id',$id) << 'id' yang dimaksud merupakan salah 1 data pada variabel array1 atau sama dengan array1['id']
