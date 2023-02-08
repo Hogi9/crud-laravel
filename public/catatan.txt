@@ -1,0 +1,9 @@
+Video 1 :
+    Penjelasan sejarah dan fitur yang ada di laravel
+Video 2 :
+    Penjelasan mengenai instalasi composer, laravel, dan configurasi fitur valet
+Video 3 :
+    Penjelasan mengenai lokasi model,view,controller;
+    Contoh pembuatan route di folder routes/web.php;
+    Contoh pembuatan statik file (di folder public);
+    Cara mengambil data dari route ke view dengan echo;
