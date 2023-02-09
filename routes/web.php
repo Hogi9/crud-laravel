@@ -24,3 +24,9 @@ Route::get('/about', function () {
         "gender" => "male",
     ]);
 });
+
+Route::get('/categories',function(){
+    return view('categories',[
+        "title" => "Categories",
+    ]);
+});
