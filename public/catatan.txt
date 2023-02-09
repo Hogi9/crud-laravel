@@ -78,15 +78,22 @@ Video 8 (Eloquent Relationship/hubungan antar tabel):
         }
 
 
+Video 9 (Seeder):
+    seeding digunakan untuk memberikan perintah yang digunakan untuk mengisi data pada db saat dilakukan 
+    php artisan migrate:fresh
+    php artisan db:seed
+    php artisan migrate:fresh --seed
+
 
 Fitur yang telah dipelajari :
     - valet
     - blade templating
     - collection (untuk menyimpan data array) -> video 5
     - migration (version control database) -> video 6
-    - Eloquent Object Relational Mapper (ORM) (Dummy Data + Relasi Tabel) -> Video 6
+    - Eloquent Object Relational Mapper (ORM) (Tabel pada DB jadi object + Relasi Tabel) -> Video 6,8
     - Tinker (Mengisi Data DB melalui console) -> video 6
     - Route Model Binding -> video 7
+    - Seeders -> video 9
 
 Post::create([
     'title'=>'Judul Pertama',
