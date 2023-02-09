@@ -23,3 +23,35 @@ Video 5 :
         collect(array1); << deklarasi
         array1->firstWhere('id',$id) << call function
             ('id',$id) << 'id' yang dimaksud merupakan salah 1 data pada variabel array1 atau sama dengan array1['id']
+Video 6 (Database,Migration,Eloquent(ORM)) :
+    Migration :
+        Migration / version control database digunakan untuk membuat schema db melalui codingan
+            php artisan make:migration nama_migration
+            #jika sudah ada migrasinya
+            php artisan migrate
+        Terdapat fungsi up dan down pada file database/migrations/.
+        Fungsi up digunakan untuk pembuatan schema/struktur database
+        Fungsi down digunakan untuk menghapus schema dengan cara
+            php artisan migrate:rollback
+            php artisan migrate:fresh <<< menjalankan fungsi down kemudian up
+
+    Eloquent (ORM) :
+        Eloquent digunakan supaya tabel pada db terhubung dengan model
+        Jika model berupa orm dan sudah ada file migrationnya, pada file model terdapat fungsi fillable dan hidden
+        fillable digunakan supaya data dapat diisi
+        hidden digunakan supaya data dapat disembunyikan
+
+    Tinker :
+        Aplikasi didalam laravel yang dapat digunakan untuk mengisi data melalui console
+            php artisan tinker
+
+
+
+
+Fitur yang telah dipelajari :
+    - valet
+    - blade templating
+    - collection (untuk menyimpan data array) -> video 5
+    - migration (version control database) -> video 6
+    - Eloquent Object Relational Mapper (ORM) (Dummy Data + Relasi Tabel) -> Video 6
+    - Tinker (Mengisi Data DB melalui console) -> video 6
