@@ -3,6 +3,7 @@
 use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\CategoryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,17 +17,13 @@ use App\Http\Controllers\PostController;
 
 Route::get('/', [PostController::class,'index']);
 Route::get('/posts/{post:slug}',[PostController::class,'show']);
+Route::get('/categories',[CategoryController::class,'index']);
+Route::get('/categories/{category:slug}',[CategoryController::class,'show']);
 
 Route::get('/about', function () {
     return view('about',[
         "title" => "About",
         "name" => "M Darojatun Hogi",
         "gender" => "male",
-    ]);
-});
-
-Route::get('/categories',function(){
-    return view('categories',[
-        "title" => "Categories",
     ]);
 });

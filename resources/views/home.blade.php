@@ -6,7 +6,7 @@
         <h2>
             <a href="posts/{{ $post->slug }}">{{ $post->title }}</a>
         </h2>   
-        <h5>By : {{ $post->author }} in {{ $post->category->name }}</h5>
+        <h5>By : {{ $post->user->name }} in <a href="categories/{{ $post->category->slug }}">{{ $post->category->name }}</a></h5>
         <p>{{ $post->excerpt }}</p>
     </article>
     @endforeach

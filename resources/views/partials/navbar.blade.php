@@ -13,7 +13,7 @@
                 <a class="nav-link @if($title=='About') {{ 'active' }} @endif" href="/about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link @if($title=='Categories') {{ 'active' }} @endif" href="/categories">Category</a>
+                <a class="nav-link @if($title=='Category') {{ 'active' }} @endif" href="/categories">Category</a>
             </li>
         </ul>
         </div>

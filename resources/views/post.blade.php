@@ -3,7 +3,7 @@
 
 <article>
     <h2>{{ $post->title }}</h2>
-    <h5>By : {{ $post->author }} in {{ $post->category->name }}</h5>
+    <h5>By : {{ $post->user->name }} in {{ $post->category->name }}</h5>
     <p>{!! $post->body !!}</p>
 </article>
 
