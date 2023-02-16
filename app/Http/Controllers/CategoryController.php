@@ -19,7 +19,7 @@ class CategoryController extends Controller
     {
         return view('home',[
             "title"=>"Category ".$category->name,
-            "posts"=>$category->post,
+            "posts"=>$category->post->load(['category','author']),
         ]);
     }
 }

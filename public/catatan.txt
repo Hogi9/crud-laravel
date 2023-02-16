@@ -93,6 +93,16 @@ Video 10 (Factory + Faker):
     Dalam pembuatan model pada video 7, dapat dilakukan seperti berikut
         php artisan make:model -mfs << -m adalah migrate, f adalah factory, dan s adalah seeder
 
+Video 11 (N+1 Problem):
+    N+1 Problem merupakan masalah dimana framework laravel "memanggil database" yang memiliki relasi
+    Hal tersebut terjadi karena default laravel menggunakan "Lazy Learning"
+    Hal ini dapat diatasi dengan cara menambahkan fungsi 
+        with(['author','category']) pada file PostController
+    Hal sebaliknya juga terjadi pada tabel user/author dan category, dimana membutuhkan data lainnya.
+    Hal yang dapat dilakukan yaitu menggunakan metode "Lazy Eager Loading" dengan menggunakan fungsi
+        load(['']) pada file UserController dan CategoryController
+    
+
 
 Fitur yang telah dipelajari :
     - valet
