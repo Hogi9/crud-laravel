@@ -17,10 +17,9 @@ class CategoryController extends Controller
 
     function show(Category $category)
     {
-        return view('category',[
-            "title"=>"Category",
+        return view('home',[
+            "title"=>"Category ".$category->name,
             "posts"=>$category->post,
-            "category"=>$category->name,
         ]);
     }
 }

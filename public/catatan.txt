@@ -86,6 +86,13 @@ Video 9 (Seeder):
     php artisan db:seed
     php artisan migrate:fresh --seed
 
+Video 10 (Factory + Faker):
+    factory dapat dibuat pada tiap model yang dimiliki. Factory digunakan sebagai pabrik pembuatan data dummy dengan menggunakan Faker
+    faker merupakan library tersendiri untuk men-generate data dummy.
+    Faker memiliki config pada tiap negara pada file config/app.php dan cari "faker"
+    Dalam pembuatan model pada video 7, dapat dilakukan seperti berikut
+        php artisan make:model -mfs << -m adalah migrate, f adalah factory, dan s adalah seeder
+
 
 Fitur yang telah dipelajari :
     - valet
@@ -97,3 +104,7 @@ Fitur yang telah dipelajari :
     - Route Model Binding -> video 7
     - Seeders -> video 9
 
+Catatan Sederhana :
+    Tiap schema/tabel pada db dapat terhubung dengan model dan migrasi secara langsung.
+    Migrasi digunakan untuk mendeklarasikan/membuat tabel pada db. Dan model mengatur relasi antar tabel.
+    Factory juga dapat terhubung dengan tiap model yang ada

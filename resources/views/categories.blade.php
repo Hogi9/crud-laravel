@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('container')
 @foreach($categories as $category)
-<h1>{{ $category->name }}</h1>
+<h3><a href="/categories/{{ $category->slug }}"class="text-decoration-none">{{ $category->name }}</a></h3>
 @endforeach
 @endsection
