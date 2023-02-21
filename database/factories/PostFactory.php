@@ -20,7 +20,12 @@ class PostFactory extends Factory
             'title'=>fake()->words(mt_rand(3,5),true),
             'slug'=>fake()->slug(),
             'excerpt'=>fake()->paragraph(),
-            'body'=>fake()->paragraphs(mt_rand(5,10),true),
+            // 'body'=>'<p>'.implode('</p><p>'.fake()->paragraphs(mt_rand(5,10),true)).'</p>',
+            'body'=>collect(fake()->paragraphs(mt_rand(5,10)))
+            ->map(function($p){
+                return "<p>$p</p>";
+            })
+            ->implode(''),
             'user_id'=>mt_rand(1,3),
             'category_id'=>mt_rand(1,3)
         ];

@@ -12,8 +12,15 @@
             <li class="nav-item">
                 <a class="nav-link @if($title=='About') {{ 'active' }} @endif" href="/about">About</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link @if($title=='Category') {{ 'active' }} @endif" href="/categories">Category</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/categories/programming">Programming</a></li>
+                  <li><a class="dropdown-item" href="/categories/web-design">Web Design</a></li>
+                  <li><a class="dropdown-item" href="/categories/personal">Personal</a></li>
+                </ul>
             </li>
         </ul>
         </div>

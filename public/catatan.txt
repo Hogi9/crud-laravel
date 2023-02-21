@@ -101,6 +101,13 @@ Video 11 (N+1 Problem):
     Hal sebaliknya juga terjadi pada tabel user/author dan category, dimana membutuhkan data lainnya.
     Hal yang dapat dilakukan yaitu menggunakan metode "Lazy Eager Loading" dengan menggunakan fungsi
         load(['']) pada file UserController dan CategoryController
+
+Video 12:
+    fungsi with pada video 11 dapat dipindah ke model dengan cara menambahkan variable protected $with
+    untuk menampilkan waktu terakhir pembuatan postingan, dapat digunakan library pihak ke 3 yang telah terinstal dengan laravel
+        $post->created_at->diffForHumans()
+    @foreach($data->skip(1) as $d) << digunakan untuk melakukan skip 1 data
+    paragraphs pada faker dapat dimodifikasi
     
 
 
