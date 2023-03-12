@@ -109,6 +109,13 @@ Video 12:
     @foreach($data->skip(1) as $d) << digunakan untuk melakukan skip 1 data
     paragraphs pada faker dapat dimodifikasi
     
+Video 13:
+    query scope merupakan fungsi yang digunakan supaya fungsi tersebut dapat mudah dipanggil di query.
+    query scope diletakkan pada model data dengan nama fungsi scopeNama
+    contoh ternary operator :
+        if(isset($data['nama']) ? $data['nama']:false)
+    alternatif ternary dengan php versi 7 keatas 
+        if($data['nama']??false)
 
 
 Fitur yang telah dipelajari :
@@ -120,6 +127,7 @@ Fitur yang telah dipelajari :
     - Tinker (Mengisi Data DB melalui console) -> video 6
     - Route Model Binding -> video 7
     - Seeders -> video 9
+    - Query Scope -> video 13
 
 Catatan Sederhana :
     Tiap schema/tabel pada db dapat terhubung dengan model dan migrasi secara langsung.

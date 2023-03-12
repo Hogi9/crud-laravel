@@ -18,7 +18,7 @@ use App\Http\Controllers\CategoryController;
 
 Route::get('/', [PostController::class,'index']);
 Route::get('/posts/{post:slug}',[PostController::class,'show']);
-Route::get('/categories',[CategoryController::class,'index']);
+// Route::get('/categories',[CategoryController::class,'index']);
 Route::get('/categories/{category:slug}',[CategoryController::class,'show']);
 
 Route::get('/about', function () {
@@ -29,4 +29,4 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/{author:username}',[UserController::class,'show']);
+Route::get('/author/{author:username}',[UserController::class,'show']);
