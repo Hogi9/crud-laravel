@@ -117,6 +117,9 @@ Video 13:
     alternatif ternary dengan php versi 7 keatas 
         if($data['nama']??false)
 
+Video 14: (Membuat view login dan registration)
+    1 controller biasanya mengontrol 1 folder view
+
 
 Fitur yang telah dipelajari :
     - valet
